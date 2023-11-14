@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/53d1b61862.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>Web Lab Assignment 1</title>
+</head>
+<body>
+     <div class="navbar">
+        <h1 id="logo">TicTacDrag</h1>
+     </div>      
+     <div class="grid-container">
+        <button class="box" id="box1" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box2" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box3" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box4" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box5" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box6" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box7" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box8" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+        <button class="box" id="box9" onclick="UserClick(this.id)" ondragover="allowDrop(event)" ondrop="drop(event)"></button>
+     </div>
+     <div class="player1">
+         <h1>Player X</h1>
+         <a id="x1" draggable="true" ondragstart="drag(event)">X</a>
+         <a id="x2" draggable="true" ondragstart="drag(event)">X</a>
+         <a id="x3" draggable="true" ondragstart="drag(event)">X</a>
+     </div>
+     <div class="player2">
+        <h1>Player O</h1>
+        <a id="o1" draggable="true" ondragstart="drag(event)">O</a>
+        <a id="o2" draggable="true" ondragstart="drag(event)">O</a>
+        <a id="o3" draggable="true" ondragstart="drag(event)">O</a>
+     </div>
+     <div class="popup">
+        <h1 id="alert"></h1>
+        <button id="restartbtn" onclick="reload()">Restart</button>
+     </div>
+</body>
+</html>
